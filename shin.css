@@ -1,0 +1,165 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2b5876, #4e4376);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Main Card */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 340px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Title */
+.title {
+    margin-bottom: 20px;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+/* Score Section */
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.score-section {
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.score-label {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.score-value {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Result Banner */
+.result-banner {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* Dynamic states */
+.win {
+    background: #4caf50;
+    box-shadow: 0 0 10px #4caf50;
+}
+
+.lose {
+    background: #f44336;
+    box-shadow: 0 0 10px #f44336;
+}
+
+.draw {
+    background: #ff9800;
+    box-shadow: 0 0 10px #ff9800;
+}
+
+/* Buttons */
+.choices {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice-btn {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover Effects */
+.choice-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00c6ff;
+}
+
+/* Click effect */
+.choice-btn:active {
+    transform: scale(0.95);
+}
+
+/* Last Play Info */
+.play-info {
+    font-size: 14px;
+    margin: 15px 0;
+    opacity: 0.8;
+}
+
+.choice-text {
+    font-weight: bold;
+    color: #00e5ff;
+}
+
+/* Reset Button */
+.reset-container {
+    margin-top: 10px;
+}
+
+.reset-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    box-shadow: 0 0 15px #ff512f;
+    transform: scale(1.05);
+}
+
+/* Small animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-banner {
+    animation: fadeIn 0.4s ease;
+}

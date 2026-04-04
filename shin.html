@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="shin.css">
 </head>
 <body>
-    <div id="gameCard">
-        <h2 id="gameTitle">Rock Paper Scissors</h2>
+    <div id="gameCard" class="card">
+        <h2 id="gameTitle" class="title">Rock Paper Scissors</h2>
 
-        <div id="scoreContainer">
-            <div id="userScoreSection">
-                <h5>You</h5>
-                <p id="userScore">0</p>
+        <div id="scoreContainer" class="score-container">
+            <div id="userScoreSection" class="score-section">
+                <h5 class="score-label">You</h5>
+                <p id="userScore" class="score-value">0</p>
             </div>
-            <div id="computerScoreSection">
-                <h5>Computer</h5>
-                <p id="computerScore">0</p>
+            <div id="computerScoreSection" class="score-section">
+                <h5 class="score-label">Computer</h5>
+                <p id="computerScore" class="score-value">0</p>
             </div>
         </div>
 
-        <div id="resultBanner">
+        <div id="resultBanner" class="result-banner win">
             You win!
         </div>
 
-        <div id="choiceButtonsContainer">
-              <button id="btnRock">Rock</button>
-              <button id="btnPaper">Paper</button>
-              <button id="btnScissors">Scissors</button>
+        <div id="choiceButtonsContainer" class="choices">
+            <button id="btnRock" class="choice-btn">Rock</button>
+            <button id="btnPaper" class="choice-btn">Paper</button>
+            <button id="btnScissors" class="choice-btn">Scissors</button>
         </div>
 
-        <p id="lastPlayInfo">
-            You chose: <span id="userChoiceText">PAPER</span> | 
-            Computer chose: <span id="computerChoiceText">ROCK</span>
+        <p id="lastPlayInfo" class="play-info">
+            You chose: <span id="userChoiceText" class="choice-text">PAPER</span> | 
+            Computer chose: <span id="computerChoiceText" class="choice-text">ROCK</span>
         </p>
 
-        <div>
-            <button id="btnReset">Reset Game</button>
+        <div class="reset-container">
+            <button id="btnReset" class="reset-btn">Reset Game</button>
         </div>
     </div>
 
